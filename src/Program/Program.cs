@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace PII_Game_Of_Life
+namespace GameOfLife
 {
     class Program
     {
