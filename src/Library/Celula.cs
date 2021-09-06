@@ -1,8 +1,8 @@
 ﻿using System;
 
-namespace PII_Game_Of_Life
+namespace GameOfLife
 {
-    public class Cel
+    public class Celula
     {
     }
 }

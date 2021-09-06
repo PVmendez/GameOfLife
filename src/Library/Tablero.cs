@@ -1,28 +1,42 @@
-bool[,] b //variable que representa el tablero
-int width //variabe que representa el ancho del tablero
-int height //variabe que representa altura del tablero
-while (true)
+using System;
+
+namespace GameOfLife
 {
-    Console.Clear();
-    StringBuilder s = new StringBuilder();
-    for (int y = 0; y<height;y++)
+    class Tablero
     {
-        for (int x = 0; x<width; x++)
+        public static void Tablero()
         {
-            if(b[x,y])
+            bool[,] b //variable que representa el tablero
+            int width //variabe que representa el ancho del tablero
+            int height //variabe que representa altura del tablero
+            while (true) 
             {
-                s.Append("|X|");
-            }
-            else
-            {
-                s.Append("___");
-            }
-        }
-        s.Append("\n");
-    }
-    Console.WriteLine(s.ToString());
+                Console.Clear();
+                StringBuilder s = new StringBuilder();
+                for (int y = 0; y<height;y++)
+                {
+                    for (int x = 0; x<width; x++)
+                    {
+                        if(b[x,y])
+                        {
+                            s.Append("|X|");
+                        }
+                        else
+                        {
+                            s.Append("___");
+                        }
+                    }
+                    s.Append("\n");
+                }
+                Console.WriteLine(s.ToString());
     //=================================================
     //Invocar método para calcular siguiente generación
     //=================================================
-    Thread.Sleep(300);
+                Thread.Sleep(300);
+            }   
+        
+        }
+    }
+    
 }
+
