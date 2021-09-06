@@ -2,7 +2,7 @@
 
 namespace PII_Game_Of_Life
 {
-    public class Cel
+    public class Celula
     {
     }
 }
