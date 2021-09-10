@@ -3,7 +3,11 @@ using System.Text;
 
 namespace GameOfLife
 {
+<<<<<<< HEAD
     public static class Celula
+=======
+    public class Celula
+>>>>>>> f0bd53ebb6e438294132f8cc54f0137035df2bc5
     {
         public static bool[,] EstadoFromString(string data)
 		{

@@ -1,4 +1,5 @@
 using System;
+<<<<<<< HEAD
 using System.Text;
 
 namespace GameOfLife
