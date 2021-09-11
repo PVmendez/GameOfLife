@@ -1,5 +1,4 @@
 using System;
-<<<<<<< HEAD
 using System.Text;
 
 namespace GameOfLife
@@ -18,6 +17,7 @@ namespace GameOfLife
 		public void Tablero()
 		{
 			bool[,] celulas = new bool[this.Width, this.Height];
+			
 
 			for(int i = 0; i < this.Width; i++)
 				for(int j = 0; j < this.Height; j++)
@@ -26,13 +26,13 @@ namespace GameOfLife
 					for(int k = i - 1; k <= i + 1; k++)
 						for(int l = j - 1; l <= j + 1; l++)
 							if (
-								k >= 0 && l >= 0
-								&& k < this.Width
-								&& l < this.Height
-								&& this.Estado[k, l]
-							) vecino_vivo++;
+								k >= 0 && l >= 0 && k < this.Height && l < this.Width && this.Estado[k, l]
+							) 
+						vecino_vivo++;
 
-					if (this.Estado[i, j]) vecino_vivo--;
+					if (this.Estado[i, j]) {
+					 vecino_vivo-- ;
+					}
 
 					celulas[i, j] = Celula.Celulas_Vivas(this.Estado[i, j], vecino_vivo);
 				}

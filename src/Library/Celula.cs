@@ -32,8 +32,9 @@ namespace GameOfLife
 
 		public static string EstadoToString(bool[,] estado, string viva = "|X|", string muerta = null)
 		{
-			if(string.IsNullOrEmpty(viva))
+			if(string.IsNullOrEmpty(viva)){
 				viva ??= "|X|";
+			}
 			muerta ??= new String('-', viva.Length);
 			StringBuilder sb = new StringBuilder("");
 			for(int j = 0; j < estado.GetLength(1); j++)
